@@ -72,7 +72,8 @@ python install_libraries.py
 
 
 ### STEP 1: Download the Datasets:
-You can download the datasets from the directories 
+You can download the datasets from the Kaggle (dataset is public)
+
 1. vibeid-a1 [A1](https://www.kaggle.com/datasets/mainakml/vibeid-a1)
 2. vibeid-a2 [A2](https://www.kaggle.com/datasets/mainakml/vibeid-a2)
 3. vibeid-a3 [A3](https://www.kaggle.com/datasets/mainakml/vibeid-a3)
@@ -80,7 +81,12 @@ You can download the datasets from the directories
 
 OR 
 run 
-python kaggle_dataset_download.py --kaggle_dataset mainakml/vibeid-a-4-1
+
+python kaggle_dataset_download.py --kaggle_dataset "mainakml/dataset link"
+
+Quick  Run 
+python kaggle_dataset_download.py --kaggle_dataset "mainakml/vibeid-a-4-1"
+
 change the dataset link as your requirement
 1. mainakml/vibeid-a1
 2. mainakml/vibeid-a2
@@ -89,13 +95,13 @@ change the dataset link as your requirement
 
 
 ### STEP 2: Quick Run
-python single_run.py --output_dir C:\Users\mainak\Documents\GitHub\VIBEID\VIBeID_A_4_1 --batch_size 16 --num_epochs 50 --model resnet18 --num_classes 15
+python single_run.py --output_dir C:\Users\mainak\Documents\GitHub\VIBEID\VIBeID_A_4_1 --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15
 
-### STEP 2: Run
+### STEP 3: Run dataset as per your requirement
 
 ### single_image_run
-python single_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 50 --model resnet18 --num_classes 15
+python single_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15/30/40/100
 
 
 ### multi_image_run
-python multi_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 50 --model resnet18 --num_classes 15
+python multi_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15/30/40/100
