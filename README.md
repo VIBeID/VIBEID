@@ -1,6 +1,6 @@
-# Kaggle Dataset Downloader and Model Trainer
+#VIBeID Pre-processed  Dataset Downloader and Model Trainer
 
-This repository provides a script to download VIBeID datasets, create DataLoaders for training and testing, and train a ResNet-18 and ResNet-50 model using PyTorch.
+This repository provides a script to download Pre-processed  VIBeID datasets, create DataLoaders for training and testing, and train a ResNet-18 and ResNet-50 model using PyTorch.
 
 ## Requirements
 - Python 3.x
@@ -66,18 +66,36 @@ This repository provides a script to download VIBeID datasets, create DataLoader
 - **Note**: This should match the number of classes in your dataset.
 
 ## Step-by-Step guide
+
 ### STEP 1: Install Libraries:
 python install_libraries.py
 
 
 ### STEP 1: Download the Datasets:
+You can download the datasets from the directories 
 1. vibeid-a1 [A1](https://www.kaggle.com/datasets/mainakml/vibeid-a1)
 2. vibeid-a2 [A2](https://www.kaggle.com/datasets/mainakml/vibeid-a2)
 3. vibeid-a3 [A3](https://www.kaggle.com/datasets/mainakml/vibeid-a3)
 4. vibeid-a4 [A4](https://www.kaggle.com/datasets/mainakml/vibeid-a-4-1)
 
+OR 
+run 
+python kaggle_dataset_download.py --kaggle_dataset mainakml/vibeid-a-4-1
+change the dataset link as your requirement
+1. mainakml/vibeid-a1
+2. mainakml/vibeid-a2
+3. mainakml/vibeid-a3
+4. mainakml/vibeid-a-4-1
+
+
+### STEP 2: Quick Run
+python single_run.py --output_dir C:\Users\mainak\Documents\GitHub\VIBEID\VIBeID_A_4_1 --batch_size 16 --num_epochs 50 --model resnet18 --num_classes 15
+
 ### STEP 2: Run
+
 ### single_image_run
-python single_image_run.py --kaggle_json kaggle.json --kaggle_dataset mainakml/vibeid-a-4-1 --batch_size 16 --num_workers 2 --num_epochs 50
+python single_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 50 --model resnet18 --num_classes 15
+
+
 ### multi_image_run
-python multi_image_run.py --kaggle_json kaggle.json --kaggle_dataset mainakml/vibeid-a-4-1 --batch_size 16 --num_workers 2 --num_epochs 50
+python multi_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 50 --model resnet18 --num_classes 15
