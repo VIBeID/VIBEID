@@ -69,11 +69,12 @@ This repository provides a script to download VIBeID datasets, create DataLoader
 ### STEP 1: Install Libraries:
 python install_libraries.py
 
+
 ### STEP 1: Download the Datasets:
-1. vibeid-a1 <a href="https://www.kaggle.com/datasets/mainakml/vibeid-a1">
-2. vibeid-a2 <a href="https://www.kaggle.com/datasets/mainakml/vibeid-a2">
-3. vibeid-a3<a href="https://www.kaggle.com/datasets/mainakml/vibeid-a3">
-4. vibeid-a4 <a href="https://www.kaggle.com/datasets/mainakml/vibeid-a-4-1">
+1. vibeid-a1 [A1](https://www.kaggle.com/datasets/mainakml/vibeid-a1)
+2. vibeid-a2 [A2](https://www.kaggle.com/datasets/mainakml/vibeid-a2)
+3. vibeid-a3 [A3](https://www.kaggle.com/datasets/mainakml/vibeid-a3)
+4. vibeid-a4 [A4](https://www.kaggle.com/datasets/mainakml/vibeid-a-4-1)
 
 ### STEP 2: Run
 ### single_image_run
