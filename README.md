@@ -1,4 +1,4 @@
-# VIBeID: A Structural Vibration-based Soft Biometric Dataset and Benchmark for Person Identification
+# VIBeID: A Structural VIBration-based Soft Biometric Dataset and Benchmark for Person Identification
 This repository provides a script to download Pre-processed  VIBeID datasets, create DataLoaders for training and testing, and train a ResNet-18 and ResNet-50 model using PyTorch.
 
 ![1717854965704](image/README/1717854965704.png)
@@ -61,6 +61,10 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 
 ## Step-by-Step guide
 
+### Quick Run 
+- Run Multi-class Classification (Single Image) - single_run_demo.ipynb
+- Run Multi-class Classification (Multi Image)- multi_run_demo.ipynb
+- Run Domain Adaptation demo - domain_adaptation_demo.ipynb
 ### STEP 1: Install Libraries:
 python install_libraries.py
 
@@ -100,6 +104,7 @@ change the dataset link as your requirement
 
 ### multi_image_run
 ```python multi_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15/30/40/100```
+
 
 ---
 
