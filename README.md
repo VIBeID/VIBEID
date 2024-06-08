@@ -71,9 +71,9 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 
 ## Person Identification using Deep learning 
 ### Quick Run 
-- Run Multi-class Classification (Single Image) - single_run_demo.ipynb
-- Run Multi-class Classification (Multi Image)- multi_run_demo.ipynb
-- Run Domain Adaptation demo - domain_adaptation_demo.ipynb
+- Run Multi-class Classification (Single Image) - ![single_run_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/single_run_demo.ipynb)
+- Run Multi-class Classification (Multi Image)- ![multi_run_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/multi_run_demo.ipynb)
+- Run Domain Adaptation demo - ![domain_adaptation_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/domain_adaptation_demo.ipynb)
 ### STEP 1: Install Libraries:
 python install_libraries.py
 
