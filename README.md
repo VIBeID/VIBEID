@@ -1,5 +1,4 @@
 # VIBeID Pre-processed  Dataset Downloader and Model Trainer
-
 This repository provides a script to download Pre-processed  VIBeID datasets, create DataLoaders for training and testing, and train a ResNet-18 and ResNet-50 model using PyTorch.
 
 ## Requirements
@@ -89,6 +88,7 @@ change the dataset link as your requirement
 
 
 ### STEP 2: Quick Run
+
 python single_run.py --output_dir C:\Users\mainak\Documents\GitHub\VIBEID\VIBeID_A_4_1 --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15
 
 ### STEP 3: Run dataset as per your requirement
@@ -99,3 +99,7 @@ python single_run.py --output_dir "add dataset link which contains train and tes
 
 ### multi_image_run
 python multi_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15/30/40/100
+
+---
+
+![1717854053761](https://github.com/Mainak1792/VIBEID/blob/main/image/README/1717854053761.png)
