@@ -9,12 +9,6 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 
 ## Arguments
 
-### `--kaggle_json` (required)
-- **Description**: Path to the `kaggle.json` file for Kaggle API authentication.
-- **Type**: `str`
-- **Example**: `--kaggle_json kaggle.json`
-- **Note**: This file is necessary for downloading datasets from Kaggle. It is available with the repo
-
 ### `--kaggle_dataset`
 - **Description**: Kaggle dataset identifier in the format `mainakml/dataset-name`.
 - **Type**: `str`
@@ -62,7 +56,7 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 - **Description**: Number of output classes for the model.
 - **Type**: `int`
 - **Default**: `15`
-- **Example**: `--num_classes 20`
+- **Example**: `--num_classes 15/30/40/100`
 - **Note**: This should match the number of classes in your dataset.
 
 ## Step-by-Step guide
