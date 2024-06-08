@@ -8,6 +8,8 @@ from torch.utils.data import DataLoader
 from torchvision import transforms, models
 import numpy as np
 import cv2
+import subprocess
+import sys
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -84,10 +86,10 @@ def create_dataloaders(output_dir, num_classes, batch_size=16, num_workers=2, nu
     X_test_tensor = torch.tensor(X_test, dtype=torch.float32)
     y_test_tensor = torch.tensor(y_test, dtype=torch.long)
 
-    logging.info("Train data shape (X_train): %s", X_train_tensor.shape)
-    logging.info("Train data labels shape (y_train): %s", y_train_tensor.shape)
-    logging.info("Test data shape (X_test): %s", X_test_tensor.shape)
-    logging.info("Test data labels shape (y_test): %s", y_test_tensor.shape)
+    # logging.info("Train data shape (X_train): %s", X_train_tensor.shape)
+    # logging.info("Train data labels shape (y_train): %s", y_train_tensor.shape)
+    # logging.info("Test data shape (X_test): %s", X_test_tensor.shape)
+    # logging.info("Test data labels shape (y_test): %s", y_test_tensor.shape)
 
     train_loader = torch.utils.data.DataLoader(torch.utils.data.TensorDataset(X_train_tensor, y_train_tensor), batch_size=batch_size, shuffle=True)
     test_loader = torch.utils.data.DataLoader(torch.utils.data.TensorDataset(X_test_tensor, y_test_tensor), batch_size=batch_size, shuffle=False)
