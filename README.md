@@ -1,4 +1,4 @@
-# VIBeID: A Structural VIBration-based Soft Biometric Dataset and Benchmark for Person Identification
+# VIBeID: A Structural **VIB**ration-based Soft Biometric Dataset and Benchmark for Person **ID**entification
 This repository provides a script to download Pre-processed  VIBeID datasets, create DataLoaders for training and testing, and train a ResNet-18 and ResNet-50 model using PyTorch.
 
 ![1717854965704](image/README/1717854965704.png)
