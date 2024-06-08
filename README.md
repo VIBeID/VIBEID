@@ -71,9 +71,9 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 
 ## Person Identification using Deep learning 
 ### Quick Run 
-- Run Multi-class Classification (Single Image) - ![single_run_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/single_run_demo.ipynb)
-- Run Multi-class Classification (Multi Image)- ![multi_run_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/multi_run_demo.ipynb)
-- Run Domain Adaptation demo - ![domain_adaptation_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/domain_adaptation_demo.ipynb)
+- Run Multi-class Classification (Single Image) - [single_run_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/single_run_demo.ipynb)
+- Run Multi-class Classification (Multi Image)- [multi_run_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/multi_run_demo.ipynb)
+- Run Domain Adaptation demo - [domain_adaptation_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/domain_adaptation_demo.ipynb)
 ### STEP 1: Install Libraries:
 python install_libraries.py
 
@@ -118,9 +118,6 @@ change the dataset link as your requirement
 - Pretrained models are available in the folder
 - change the path to the target test and val directory
 - update three_all parameter
-```python domain_run.py --model_path resnet_18_RGB_A3.1_100.pth --target_train_dir "add path to test"\test --target_test_dir  "add path to val"\val --three_all 1```
-
-## GEI 
-
+```python domain_run.py --model_path resnet_18_RGB_A3.1_100.pth --target_train_dir "add path to test"\test --target_test_dir  "add path to val"\val --three_all 0/1```
 ---
 
