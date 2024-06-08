@@ -59,8 +59,17 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 - **Example**: `--num_classes 15/30/40/100`
 - **Note**: This should match the number of classes in your dataset.
 
+### `--three_all`
+- **Description**: Fine tune last 3 layers or all layers
+- **Type**: `int`
+- **Default**: `0`
+- **Example**: `--three_all 0/1`
+- **Note**: 0:Fine tune last 3 layers, 1: Fine tune all layers.
+
+
 ## Step-by-Step guide
 
+## Person Identification using Deep learning 
 ### Quick Run 
 - Run Multi-class Classification (Single Image) - ![single_run_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/single_run_demo.ipynb)
 - Run Multi-class Classification (Multi Image)- ![multi_run_demo.ipynb](https://github.com/Mainak1792/VIBEID/blob/main/multi_run_demo.ipynb)
@@ -69,7 +78,7 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 python install_libraries.py
 
 
-### STEP 1: Download the Datasets:
+### STEP 2: Download the Datasets
 You can download the datasets from the Kaggle (dataset is public)
 
 1. vibeid-a1 [A1](https://www.kaggle.com/datasets/mainakml/vibeid-a1)
@@ -92,11 +101,11 @@ change the dataset link as your requirement
 4. mainakml/vibeid-a-4-1
 
 
-### STEP 2: Quick Run
+### STEP 3: Quick Run
 
 ```python single_run.py --output_dir C:\Users\mainak\Documents\GitHub\VIBEID\VIBeID_A_4_1 --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15```
 
-### STEP 3: Run dataset as per your requirement
+### STEP 4: Run dataset as per your requirement
 
 ### single_image_run
 ```python single_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15/30/40/100```
@@ -105,6 +114,13 @@ change the dataset link as your requirement
 ### multi_image_run
 ```python multi_run.py --output_dir "add dataset link which contains train and test" --batch_size 16 --num_epochs 100 --model resnet18 --num_classes 15/30/40/100```
 
+## Domain Adaptation using Deep learning 
+- Pretrained models are available in the folder
+- change the path to the target test and val directory
+- update three_all parameter
+```python domain_run.py --model_path resnet_18_RGB_A3.1_100.pth --target_train_dir "add path to test"\test --target_test_dir  "add path to val"\val --three_all 1```
+
+## GEI 
 
 ---
 
