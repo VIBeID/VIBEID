@@ -1,11 +1,6 @@
 clc , close all,   clear ;
-%%
-
-
-
-
 % Load Mat file for tarining model
-load("E:\VIBeID\VIBeID_A2\A2_1\P1_full.mat")
+load("Enter the path of file you want to use for training model")
 
 Fs = 8000; % Frequency of the recorded signal
 n = 100*Fs; 
