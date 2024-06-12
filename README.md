@@ -68,6 +68,11 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 
 
 ## Step-by-Step guide
+## Convert Signal to CWT images
+- Run spec_maker.py 
+``` python spec_maker.py --file_path "A2_2_30p.mat" --notebook_path "folder_to_save_CWT _images"```
+- Run train test file
+``` python train_test.py --data_dir "CWT_image_folder_name" --output_dir "folder_to_save" --test_size 0.2```
 
 ## Person Identification using Deep learning 
 ### Quick Run 
