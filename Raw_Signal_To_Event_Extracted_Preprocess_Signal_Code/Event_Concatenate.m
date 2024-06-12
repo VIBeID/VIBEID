@@ -2,8 +2,6 @@ clc, clear all, close all;
 % Load the saved after running usleet matlab code file
 load(['person_feat_VIBeID_A2_1.mat'])
 
-
-
 footstep_feat = [];
 labels=[];
 % List of dataset names
