@@ -70,23 +70,26 @@ This repository provides a script to download Pre-processed  VIBeID datasets, cr
 
 ## Step-by-Step guide
 
-## Convert Raw Signal to Event Extracted Preprocess Signal
-- Copy the Raw_Signal_To_Event_Extract_Preprocess_Signal_Code files to Dataset Folder like in VIBeID_A1.
+## Convert Raw Signal to Preprocess Signal using Toolkit using MATLAB (Optional)
+- Copy the ``Raw_Signal_To_Event_Extract_Preprocess_Signal_Code'' files to Dataset Folder like in VIBeID_A1.
 - Open the **Dataset_Creation.m** file in MATLAB, and uncomment the persons list depending upon the dataset you want to extract the events.
 - Change the value of **k** depending upon the dataset use case.
 - Run the **Dataset_Creation.m** script, it will generate the concatenated mat file for each person present in the dataset, the generated file name is as P1_full.mat, P2_full.mat, etc.
 - Open the **USLEET.m** file in MATLAB, enter the path of file on which you want to start training model in line number like P1_full.mat
   ``` % Load Mat file for tarining model
       load('P1_full.mat') 
-- Uncomment the persons list, and pn depending upon dataset selection, run the USLEET script.
-- It will plot the signal of loaded file, it's distribution cluster of two classes, then press enter in the console to proceed, it will start extracting the events for each person.
+- Uncomment the **persons list**, and **pn** depending upon dataset selection, run the USLEET script.
 - It will take sometime depending upon processing capability of system. It will save a new file named as **person_feat_SELECTED_DATASET.mat**.
 - Open the **Event_Concatenate.m** file, enter the path of newly saved person_feat_SELECTED_DATASET.mat file in line number 3, change the value for dataset variable in code to match with the loaded file.
   ``` % Load the saved after running usleet matlab code file
       load(['person_feat_VIBeID_A2_1.mat']) 
 - It will save a new file named as **footstep_feat_SELECTED_DATASET.mat**. This file contains all the event extract for each persons. The last column of the file act as label. Each row represent a footstep event extracted from raw signal.
-- This file can be used for Person identification using machine learning techniques.
-- This file act as the source file for cwt images creation for deep learnin analysis.
+- This file act as the source file for cwt images creation for deep learning analysis.
+- **Or directly download the .mat files from Kaggle**
+- VIBeID-[A1](https://www.kaggle.com/datasets/mainakml/vibeid-a1-event)
+- VIBeID-[A2](https://www.kaggle.com/datasets/mainakml/vibeid-a2-event)
+- VIBeID-[A3](https://www.kaggle.com/datasets/mainakml/vibeid-a3-event)
+- VIBeID-[A4.1](https://www.kaggle.com/datasets/mainakml/a4-1signal)
 
 ## Convert Signal to CWT images
 - Run spec_maker.py 
